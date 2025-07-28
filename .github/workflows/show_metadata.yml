@@ -1,5 +1,5 @@
 name: Show Metadata
-on: [issues, workflow_run]
+on: [issues, workflow_dispatch]
 jobs:
   show_metadata:
     runs-on: ubuntu-latest
