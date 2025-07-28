@@ -31,7 +31,6 @@ jobs:
         uses: sibiraj-s/action-eslint@v4
         with:
           eslint_options: '--ext .jsx --fix src'
-        # run:  eslint --ext .jsx --fix src
   deploy:
     needs: [test, lint]
     runs-on: ubuntu-latest
