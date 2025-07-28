@@ -7,4 +7,4 @@ jobs:
       - name: Show Metadata
         run: |
           echo "Details:\n"
-          echo ${{ github.event.details }}
+          echo "${{ toJSON(github) }}"
