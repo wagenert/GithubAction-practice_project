@@ -1,0 +1,10 @@
+name: Show Metadata
+on: [issues, workflow_run]
+jobs:
+  show_metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show Metadata
+        run: |
+          echo "Details:\n"
+          echo ${{ github.event.details }}
